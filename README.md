@@ -1,5 +1,4 @@
 # CMPG323-Project-4-34739572
-# CMPG323-Project-3-34739572
 ## Links
 * Web App: https://ecopowerlogisticswebapp.azurewebsites.net/
 * GitHub Repository: https://github.com/ArminPretorius/CMPG323-Project-4-34739572
