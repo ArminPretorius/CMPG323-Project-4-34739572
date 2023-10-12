@@ -12,10 +12,10 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "email&Sequence_1",
         "toTest&Sequence_1",
         "TestDataFilePath&Sequence_1",
-        "password&Sequence_1",
-        "username&Sequence_1"
+        "password&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -25,7 +25,24 @@
       "Path": "Login.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "Email",
+        "Password"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Customers Test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "testURL&Sequence_1",
+        "dtWorkbook&Sequence_1",
+        "i&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "TestDataFilePath"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
