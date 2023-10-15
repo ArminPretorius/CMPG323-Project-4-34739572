@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1168,7039</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,7161</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Customers_Test_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -118,7 +118,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Customers_Test" sap:VirtualizedContainerService.HintSize="1178,6974" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Customers_Test" sap:VirtualizedContainerService.HintSize="1178,7096" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="i" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtWorkbook" />
@@ -144,25 +144,25 @@
         <InArgument x:TypeArguments="x:Int32">2</InArgument>
       </Assign.Value>
     </Assign>
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1116,6613" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_7" ResizeWindow="None" WorkbookPath="[TestDataFilePath]">
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1116,6735" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_7" ResizeWindow="None" WorkbookPath="[TestDataFilePath]">
       <ueab:ExcelApplicationCard.Body>
         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1082,6344" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1082,6466" sap2010:WorkflowViewState.IdRef="Sequence_17">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtWorkbook]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1020,6233" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtWorkbook]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1020,6355" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="986,6047" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="986,6169" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -249,7 +249,7 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Customers&quot;).Cell(&quot;F2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="710,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;Create Success&quot;]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Customers&quot;).Cell(&quot;F&quot;+i.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="710,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;Create Success&quot;]" />
                                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Edit'" sap:VirtualizedContainerService.HintSize="710,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4cd42a22-75f1-4914-b641-16ab12706b73" Version="V3">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Customers" CvTextArea="1346, 309, 28, 15" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="1346, 306, 27, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Edit'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Edit' check:innerText='Edit' /&gt;" Guid="4cff4799-425d-4ceb-a0dd-2358a3e47ca6" InformativeScreenshot="12d31aabb756fe0836f391dc112d0526.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
@@ -292,13 +292,13 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Customers&quot;).Cell(&quot;F2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="572,159" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;Edit Success&quot;]" />
+                                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Customers&quot;).Cell(&quot;F&quot;+i.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="572,159" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;Edit Success&quot;]" />
                                             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Delete'" sap:VirtualizedContainerService.HintSize="572,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4cd42a22-75f1-4914-b641-16ab12706b73" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Customers" CvTextArea="1445, 309, 47, 15" CvTextArgument="Delete" CvType="Text" DesignTimeRectangle="1446, 306, 46, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Delete'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Delete' tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Delete' type='' tag='A' class='' check:innerText='Delete' /&gt;" Guid="af539859-1584-4fd7-b38d-23fe58c3a4a6" InformativeScreenshot="c2c86129de75b45075f1480b049b254c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
                                                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                      <uix:Target CvTextArea="544, 309, 63, 15" CvTextArgument="[CurrentRow.Item(2).ToString]" CvType="Text" DesignTimeRectangle="537, 297, 237, 41" ElementType="Text" FriendlyName="'Christina'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='                 Christina             ' check:innerText='Christina' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPEAAAAtCAYAAAB/N41dAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAItSURBVHhe7dvNbcIwAIZhVsmhB8ZCHJiEQ0ZByiggNuihhyLBEG7sOGA7psRpQHzq+0hWFcgfUl9sqLowAKQtqo+lYTAYuoOZGBBHxIA4IgbEETEgjogBcUQMiCNiQBwRA+KIGBBHxIA4IgbEETEgjogBcUQMiHtOxPvaVB+1OfjN8S5mt16aqj767VJ/PR7QMzniQx3/T6Md271/koiBlymP+NSYVRvsqrn4B7w23OtjkyMu0QU7uA/gnymM+Gi24Yx7DxEDL1MU8bnZmGrdmLPfvquP2M/ag+W21e/jfrbPu/MOw0yX7e4cyXnt6I5Jj79tR+dJX0N6vjGvEXgTBREXzHxRmB33BhDOzv0+0efX+BqDN432mNsbQe5+8hHb69yO61YT4XGHOlw1+GP4XA0RxRE/XEpbLtCN2Z38tpMsxbP7xBG62fNuTGmwVvpYPshHK4rRKw7gDTxxJk4/E+ciTvdJrnFd5qaxW+MjTu85F+ng23Yihoiiz8S/z4yBuSLuuX1tXGHMM0Xcv1EEr4uZGEqKIu5iys2KibkjdsYEWh5xLlgihpKyiFvuFzyMsddGeY1lpohzXziFQQ5XBuURD+6jn5mJGCKKI3Yyf+KJQpgt4vgaaYzhfXTPTYi4FV2nffzATAwh0yIG8DaIGBBHxIA4IgbEETEgjogBcUQMiCNiQBwRA+KIGBBHxIA4IgbEETEgjogBcYvPr2/DYDB0BzMxII6IAWnG/AAvXHfa+K1MsAAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, TextNative, CV" />
+                                                      <uix:Target CvTextArea="544, 309, 63, 15" CvTextArgument="[CurrentRow.Item(2).ToString + &quot; Edited&quot;]" CvType="Text" DesignTimeRectangle="537, 297, 237, 41" ElementType="Text" FriendlyName="'Christina'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='                 Christina             ' check:innerText='Christina' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPEAAAAtCAYAAAB/N41dAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAItSURBVHhe7dvNbcIwAIZhVsmhB8ZCHJiEQ0ZByiggNuihhyLBEG7sOGA7psRpQHzq+0hWFcgfUl9sqLowAKQtqo+lYTAYuoOZGBBHxIA4IgbEETEgjogBcUQMiCNiQBwRA+KIGBBHxIA4IgbEETEgjogBcUQMiHtOxPvaVB+1OfjN8S5mt16aqj767VJ/PR7QMzniQx3/T6Md271/koiBlymP+NSYVRvsqrn4B7w23OtjkyMu0QU7uA/gnymM+Gi24Yx7DxEDL1MU8bnZmGrdmLPfvquP2M/ag+W21e/jfrbPu/MOw0yX7e4cyXnt6I5Jj79tR+dJX0N6vjGvEXgTBREXzHxRmB33BhDOzv0+0efX+BqDN432mNsbQe5+8hHb69yO61YT4XGHOlw1+GP4XA0RxRE/XEpbLtCN2Z38tpMsxbP7xBG62fNuTGmwVvpYPshHK4rRKw7gDTxxJk4/E+ciTvdJrnFd5qaxW+MjTu85F+ng23Yihoiiz8S/z4yBuSLuuX1tXGHMM0Xcv1EEr4uZGEqKIu5iys2KibkjdsYEWh5xLlgihpKyiFvuFzyMsddGeY1lpohzXziFQQ5XBuURD+6jn5mJGCKKI3Yyf+KJQpgt4vgaaYzhfXTPTYi4FV2nffzATAwh0yIG8DaIGBBHxIA4IgbEETEgjogBcUQMiCNiQBwRA+KIGBBHxIA4IgbEETEgjogBcYvPr2/DYDB0BzMxII6IAWnG/AAvXHfa+K1MsAAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, TextNative, CV" />
                                                     </scg:List>
                                                   </uix:TargetAnchorable.Anchors>
                                                 </uix:TargetAnchorable>
@@ -324,7 +324,7 @@
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Customers&quot;).Cell(&quot;F2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[&quot;Success&quot;]" />
+                                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Customers&quot;).Cell(&quot;F&quot;+i.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[&quot;Success&quot;]" />
                                                   </Sequence>
                                                 </Sequence>
                                               </If.Then>
@@ -341,7 +341,7 @@
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Customers&quot;).Cell(&quot;F2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[&quot;Delete Error&quot;]" />
+                                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Customers&quot;).Cell(&quot;F&quot;+i.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[&quot;Delete Error&quot;]" />
                                                   </Sequence>
                                                 </Sequence>
                                               </If.Else>
@@ -362,7 +362,7 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Customers&quot;).Cell(&quot;F2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;Edit Error&quot;]" />
+                                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Customers&quot;).Cell(&quot;F&quot;+i.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;Edit Error&quot;]" />
                                           </Sequence>
                                         </Sequence>
                                       </If.Else>
@@ -383,7 +383,7 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Customers&quot;).Cell(&quot;F2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[&quot;Create Error&quot;]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Customers&quot;).Cell(&quot;F&quot;+i.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[&quot;Create Error&quot;]" />
                                   </Sequence>
                                 </Sequence>
                               </If.Else>
@@ -395,6 +395,14 @@
                         <uix:TargetApp Area="1912, -8, 1936, 1096" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK7SURBVDhPdZLda9NQGMbjnyayO+8E8cIbwRsvnOxiMNiF4pggiDKYlyIqgnPuA8uq+17dh9uStV3XNu3aLv1ImzUfbdMmaZImfTw5ZXOCCzxwOOc8v/PkfV8GwI0LJRKJm5Zl4X8yDAOyLIPn+fdXPYymaZeXgvV1n+d5cBwHmUwG5XL5EsJ0Oh3MxRRMbVXxYUeglx3HhSRr/0iUZKpoLIZkMgmSlkIoYGqzitGFM0yt5q8F1OoqBQjlKprNFkRRBMdxtyjgzaaIkfkCnocyFBDE7RgmTMuG2bXJ2qJqkz29Y8KyXXq2trY2RAGvN0Q8mcvj2XeeAoIEwYtKQ4dKVDtXUT1X/YqkolRVoBu2b9mev7yyMgC82qhgZCGPyaVBAvsCoLWoRGIMzOVaAFADAEzbQ/hHeAB4uV7Go9lTjC+m0O/30bUd+mpgltXWFbOCoqig2bZhWD2EQqEhpt1u48VqCQ9nMhhbSML3CaDroEpMiWQafCaLNJ/BVuQXuKMoItu/SSElVGoKpt9O32F0AphYKeLBFx6j8yfwfB8WAQSvpvgscrk8JElCs6WT6g/UIF1QFA0sywmMrrfx9OcZ7n9OYeTbMVzPJ/FsGjmVPkWlIpLBEVEqiSiWKhCKf7V/wApMU9cxHs7j3qcTDH+Nw3F9dEyb/q9ATEFBu7RtDgzTIa20qfSODT5bEJgGiTa2lMfdjwk8nokTg0cSuKSFBsRaHT2vT4w2LWhdaZLiavSsbfaQzRUJgPR5NJTD7XdxDM/GyZB4tEVG18O5rMLt+XR4ArNUbxCoSiaT1KLtIp0VBCYYlLRk4LCkI14KLsioVOsoi3UUydgGgC5N1SP9d6lR0x2qJE8Ax4nkBHcUm2S5gQ4DsdHJA6K19c1llosWDg6PCnv7XGFnjy1s73K5yC6bi+ywufnFcOQP0NGNf8YUGpIAAAAASUVORK5CYII=" InformativeScreenshot="be920865bae9b053497d67c6f104004f.jpg" Selector="&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;" Title="Index - EcoPower_Logistics" Url="https://cmpg323-ecopowerlogistics.azurewebsites.net/Customers" />
                       </uix:NApplicationCard.TargetApp>
                     </uix:NApplicationCard>
+                    <Assign sap:VirtualizedContainerService.HintSize="944,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[i+1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
                   </Sequence>
                 </ActivityAction>
               </ui:ForEachRow.Body>

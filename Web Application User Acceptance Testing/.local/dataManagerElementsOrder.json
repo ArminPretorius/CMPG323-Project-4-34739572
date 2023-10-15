@@ -45,6 +45,48 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Products Test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "testURL&Sequence_1",
+        "dtWorkbook&Sequence_1",
+        "i&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "TestDataFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Orders Test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "testURL&Sequence_1",
+        "i&Sequence_1",
+        "dtWorkbook&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "TestDataFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "OrderDetails Test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "testURL&Sequence_2",
+        "i&Sequence_2",
+        "dtWorkbook&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "TestDataFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

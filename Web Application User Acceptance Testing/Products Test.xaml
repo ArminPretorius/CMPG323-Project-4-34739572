@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1234,6115</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,6237</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Products_Test_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -114,7 +114,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Products_Test" sap:VirtualizedContainerService.HintSize="992,6050" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Products_Test" sap:VirtualizedContainerService.HintSize="992,6172" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="i" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtWorkbook" />
@@ -140,25 +140,25 @@
         <InArgument x:TypeArguments="x:Int32">2</InArgument>
       </Assign.Value>
     </Assign>
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="930,5689" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[TestDataFilePath]">
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="930,5811" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[TestDataFilePath]">
       <ueab:ExcelApplicationCard.Body>
         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="896,5420" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="896,5542" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtWorkbook]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="834,5309" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtWorkbook]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="834,5431" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="800,5123" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="800,5245" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -185,7 +185,7 @@
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products/Create" CvElementArea="318, 345, 418, 42" CvType="InputBox" DesignTimeRectangle="320, 347, 416, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT ProductName'" FullSelectorArgument="&lt;webctrl id='ProductName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ProductName' tag='INPUT' type='text' class='form-control' aaname='Product Name' /&gt;" Guid="c6b8e492-795d-4253-ae04-95d3819bde39" InformativeScreenshot="233b38d76e9e7f7216fc1d8e271a37d3.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target CvTextArea="320, 327, 102, 15" CvTextArgument="Product Name" CvType="Text" DesignTimeRectangle="320, 323, 102, 24" ElementType="Text" FriendlyName="'Product Name'" FullSelectorArgument="&lt;webctrl aaname='Product Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Product Name' tag='LABEL' type='' class='control-label' check:innerText='Product Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGoAAAAcCAYAAACJWipLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJuSURBVGhD7ZbBTgIxEIZ9FQ8cfCzCgSfhsI9Cso8C4kEvmnjwIAnExIt6wdR22tmdaafuIruBmvmTBphtOzP/1264MqoipKAKkYIqRAqqECmoQqSgCpGCKkQKqhCdH9S2NtPJ3Cy34bdKFAO1q+fmenLDx6w2u/B8FJ0N1MYsoMfKrEOEaVXln51BKSgGZm+Ws5FhjQAq7UMSgrKj2oQYUVmgrMY+8WcGtahdfvu5CmFUcaCwodDIuvInED5tfFrv/QO8fe6EhpE0bwU5mjkW0IqDgufxCRdhSvnSWB5Y25evKYIigOK1096dfO5pvWE1eA/I7W1iVPy5VPPRNwoB8WQhETUY1vFmUkOwwGNBCfmssViT2Eciv4dfEwBH+yW1Cv21PuAhiXqR+hM8oH6Cx1H9HaBSQ6RNcsbweFoQKIIAazpA5fKhup57RfXExne++vAG8TcKv2U+hxTDPH36dUpB2U3o4EnaVx+Vi8XzQJAwNEu/U0kQOgrP5gv6Eygr33+oUQTl18j+5EHxw8lj4CfZrx1doDoa/M+g2CswAuUh0vn9b1QXqN96QQ0CKreOxcHsuGgrMCQCFe/VZw5Rnz5kE62wTvg3iKAkCMOA6lfrQKAwOYsLYGAtu1VhHb3myTphjpTPwmzWiK+tWNwwKvABcrZ7xH3jnFNBYb/JusjjgUA5BfOaQY1t5WHhsEZAoXxua1R+TpqPgvGmQTzbj2QiCtfTPXk+/Bt+MiinAKvtJfWOgVJdrhRUIVJQhUhBFSIFVYgUVCFioD4+v8zzy6u5e3gyt/ePOi5oNKAcJAdo//ZuDofvEFVdhoz5AbpiXuXVQMY9AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -196,7 +196,7 @@
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products/Create" CvElementArea="318, 408, 419, 41" CvType="InputBox" DesignTimeRectangle="320, 409, 416, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT ProductDescription'" FullSelectorArgument="&lt;webctrl id='ProductDescription' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ProductDescription' tag='INPUT' type='text' class='form-control' aaname='Product Description' /&gt;" Guid="fabc3e3c-a088-4c20-8c57-b315617af0f9" InformativeScreenshot="f15f77283d31fa698be0421c6e7fb156.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target CvTextArea="320, 389, 140, 18" CvTextArgument="Product Description" CvType="Text" DesignTimeRectangle="320, 385, 140, 24" ElementType="Text" FriendlyName="'Product Description'" FullSelectorArgument="&lt;webctrl aaname='Product Description' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Product Description' tag='LABEL' type='' class='control-label' check:innerText='Product Description' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAAcCAYAAACONDYbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMRSURBVHhe7Zu9btswEMf7Khk65LGCDHmSDHqUAHoUu+7QLi3QoUMD2CjQpe2SgCWPPOnueBSpyGrk9n7AITEp3udfhBe/cYmfv3679x8/u9P3H+7p6TmtGsY0g4ACQURfvn4DIb378MnMrGpMQIYxFxOQsQgTkLEIE5CxCBOQsQgTkLGI1xfQY+9u3t65h8f02QD23bW7uu3dMX1+MdDfa3e/S5/PDBPQsb9zVz4Ys3MUMcWrCejg7mWtYNsQ8+UKiCV9cg+3ZyqkxAoCyuvQiALKGrvropC6Q1q4JAo1rUhFQJ61b4itCSiw8lu7HlsUkEgKrlb/dsJfv37Tn+IG3lZ+DU0rBGIMz3jh7LiAYF++/arItHj5WllI083GOilYc7RaPmIfbzY0zAvWO7fH/bTO40ffode8f/5ceiLz7w1qa+5d2gLGeKxmpZezbyB0yAPGYbCGp7d4FBiKhxSN54j/NgEp8XwDMSe1joxpAUkfmaBgYKIvZP/Yd7wmlr8fUJd84+BFzdzfOHDazziLvJ+sppbeZbMa442+4jkaP1ARUB4MkhbDKQ2MrxcGJgqEM6KZ6jNKPKS2Hynkg4TBog+ITwcVGN9S/r+kIQ4bcEQVkOxL5luJ1dg7vq7H087mAvIJUJNN4YVFwpraPNp4dQgercCKgIrxEqUmcaYHy3zgLaHYkMfwjKixVDcC5/J9TUB5zXK9LqCmWRXitQmo0vj/RUAsBr2NKkBsKqRS3YgJqHyOrUOCysCggUJA0lfLM4SWOiYFJIcqhlCH+p4W6iIBZXnVBdQ0q78tIEycrSuCgbOsWekcbUJ2TnlGi+cHMZwpDIWjNNsTc5RiiQ2Vvdl35I3FL8UA9w19ZT7J8zMEFG62MV8tp7jGBl8Q2fSsFD+eFQUUwEGjySFE4oDQfOOyArHh08/k8egQxoaX65Hnk6m1BYjPZGOD8z0pTF4TOTvrBjrwOFpt4C/uQw5NvZP7LxSQsVX0gW4BE9BFYAIyFmECMhZhAjL+UUxAxiKYgOyHhWZzbRCQ/bTZmI9zfwBWZJtGicuY+wAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -207,7 +207,7 @@
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products/Create" CvElementArea="319, 470, 418, 40" CvType="InputBox" DesignTimeRectangle="320, 471, 416, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT UnitsInStock'" FullSelectorArgument="&lt;webctrl id='UnitsInStock' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='UnitsInStock' tag='INPUT' type='number' class='form-control' aaname='Units in Stock' /&gt;" Guid="ff95c15d-57c5-4d9f-b1a8-06d7c3ea3e50" InformativeScreenshot="1d00cfe5636d63f34334447fca8364c4.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target CvTextArea="319, 451, 98, 15" CvTextArgument="Units in Stock" CvType="Text" DesignTimeRectangle="320, 447, 96, 24" ElementType="Text" FriendlyName="'Units in Stock'" FullSelectorArgument="&lt;webctrl aaname='Units in Stock' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Units in Stock' tag='LABEL' type='' class='control-label' check:innerText='Units in Stock' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAAcCAYAAACXkxr4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI/SURBVGhD7ZqxTsMwEED5FQaGflbVoV/SwZ9SKZ/SUgZYQGJgoFIrJBZgKTL25ZKcfRfTNk3iSvekSMSxz+d7tll6Y5Gv7x/78PRi9x+f9nD4xVZlaGohHi/l9e0dxNw/PuszwhMIUcZHhWSGCskMFZIZKiQzVEhm9CpkbSb2dlbYHb53ZlvY6d3ELlb4fmVAPcwG32QCIakBxwSLyVkI5OZiNY+xa/zWF6MLYazMIAtPs7fLGV/L2jR57Yr5ZTcSokIk4JSlc7hKIdU7JN9y7OkY+Fu8InDH1u1zu9zCBw4Uk3yv3zd2QWJPiz12EEhee3Eu7gnEhPPIufIY1VxxDava0Xy7CQmC8auAxRNOCE/SnCjE50FiwhwJqQ6pEBTxhOBcwRiYi8pFYdGaRSEteXYTEicdFZzFi75XEpM7mtIiJNztR8asZfK+kpC22tB2USSh7stENnS+sgJOFuLA5Fi7hCgk3mXnSHbzk0LywpYxpQJC/tjXrzc1L9RjNhc2UcP4QpDqGkmK6UMIUF41VZGGENLWLxBSFkUqSJiw59JCSvg8Ab0JCcdIV4+4Xgdtl8ZR6r54KqUcAyHiPyUHBDomwf+EsAK6QhgadwAhbswi/gZ5kzjSxpGKGI+T6uf6VOsJ6iHFc0RCPOWCyusDn7jwjrOEOKAN4vp+fK5WGZ4LCfGFoHPyU0vyohuRjY3HeVCK0IfVA+rl2sgcghBlTFRIZqiQzFAhmaFCMkOFZEYgRH8oN/5TC9GfkuaAtX+KKNprymHqpgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -228,12 +228,12 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Products&quot;).Cell(&quot;E2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="586,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;Create Success&quot;]" />
+                                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Products&quot;).Cell(&quot;E&quot;+i.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="586,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;Create Success&quot;]" />
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Edit'" sap:VirtualizedContainerService.HintSize="586,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eca135bc-8f6c-4608-8353-d8ff506db9da" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products" CvTextArea="1258, 309, 27, 15" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="1258, 306, 27, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Edit'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Edit' check:innerText='Edit' /&gt;" Guid="9a549ff1-3c2c-4aa3-90a7-8d93ce69b620" InformativeScreenshot="ffe22c2a76c8afd7c883cdcb14d8288c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                         <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                             <uix:Target CvTextArea="327, 309, 25, 15" CvTextArgument="[CurrentRow.Item(1).ToString]" CvType="Text" DesignTimeRectangle="320, 297, 282, 41" ElementType="Text" FriendlyName="'asd'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='                 asd             ' check:innerText='asd' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAR4AAAAtCAYAAAB4UARhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGeSURBVHhe7dw/SgNBGIdhr2Jh4bGChSdJsUcJ7FEi3sDCQiE5xJjsH52JEVyEn8U+D3zFZLPty8wEclMAwj7Dc3t3b4wxkbHjAeKEB4gTHiBOeIA44QHihAeIEx4gTniAOOEB4oQHiBMeIE54gDjhAeKEB4j73/C892Vz91h279MaWAXhAeKEB4gTHiBuYXiey7b5C8OuPE1PRseye6ift1E59I/ts73wwBotCs+h75pIPHWngDz05VCvu+dp1X5/jE4dqjliwgNr87ej1r6rYjLudjb9cVi1xshs99Ny5qgFq7Q4PO1x6TzVLmYI0cVnZ0NgLo9lJ8IDq7QgPNPRqDpatTueL19xmp4JD1D5fXiuReaH8Iyq49UQmCtHreF94YG1+X14vu1O5svhOTzHsuuq3dDFvc5w8dxEan5feGBtFt3xtPc7p4g0O57Ln9K/73DG+Mxzes9RC1Zp8eUywF8JDxAnPECc8ABxwgPECQ8QJzxAnPAAccIDxAkPECc8QJzwAHHCA8QJDxD3GZ6X1zdjjImMHQ8QJzxAWCkfHrFs8st3T/UAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, TextNative, CV" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
@@ -244,7 +244,7 @@
                                     <uix:NTypeInto.Target>
                                       <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products/Edit/10005584" CvElementArea="317, 344, 421, 44" CvTextArea="332, 358, 25, 15" CvTextArgument="asd" CvType="InputBox" DesignTimeRectangle="320, 347, 416, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'asd'" FullSelectorArgument="&lt;webctrl id='ProductName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ProductName' tag='INPUT' type='text' class='form-control valid' aaname='Product Name' /&gt;" Guid="58cf3a6d-e4ee-4667-874f-c84d7490b453" InformativeScreenshot="b5afb38e6781695415799cb82420ee11.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Edit - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                         <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                             <uix:Target CvTextArea="320, 327, 102, 15" CvTextArgument="Product Name" CvType="Text" DesignTimeRectangle="320, 323, 102, 24" ElementType="Text" FriendlyName="'Product Name'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='control-label' aaname='Product Name' check:innerText='Product Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGoAAAAcCAYAAACJWipLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKLSURBVGhD7Za/TgMxDMb7KgwMPFbFwJOA6CPwCEg3AzMMLEUdGIGBASGVjQUhRE3ixHd24nAHtOoF+ZOsQv7Z/n6X003AVIUMVCUyUJXIQFUiA1WJDFQlMlCVyEBVou2Dem5gunsAp8/xf5MqAWrZHMDO7p6M/QaWcX4j2hqoBRxijzO4iSNC81l5bgvKQQkwL3C6v2FYGwCV96GJQLmYLeIYU12gnDb9xG8Z1GHj87vfeRwmVQeKGoqN3MzCE4i/bnzavIQJun3+CY2RNe+EOdo1DtBcgsL59AlXYWr58rEysK6vUFMCRQEla+e9e4Xc02YhaggesNvbjnHJea3mH98oAiSTxUTcYNwnm8kNoQJ/CkrJ54ylmtQ+MoUzwp4IODkvq1Xpr/OBHpKkF60/xQPuJ3qc1N8DKjdEO6RkjBzPC0IlEHBPD6hSPlLffFBST2p876uPbpB8o8hbFnJoY5RnSL9eOSh3CA+ZpHv1cfmxdB0KE8Zm+d9cGoSewov5on4Fyin0H2tUQYU9uj9lUPLhlGPoJzuviz5QPQ3+Z1DiFZiAChD5+uE3qg/Ud72Q1gKqtE+Mo9lp0U5oSAIqPWvIGqYhfegmOlGd+DVIoDQI6wE1rNY1gaLkYlwBg3vFrYr7+DXP9ilrtHwOZrtHfW2lkoZxoQ+Yszsj7ZvW/BUU9ZvtSzxeEyivaF4b3NhOARaFMwILlWs7o8pr8nwcTDANx4v9aCaSaD8/U+ajz/A/g/KKsLpecu8EKNN4ZaAqUQvq9Q3gbrmC+SPA1f0KLu8sxhQIygPSJi3GE5PbJ33CYlwx0QYtxhcC1NntJ5xcARxfrODo3GJM0YLykDyg6weA9w/8vjCNRgBfc5GhexCOr4kAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
@@ -265,13 +265,13 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Products&quot;).Cell(&quot;E2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="510,159" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;Edit Success&quot;]" />
+                                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Products&quot;).Cell(&quot;E&quot;+i.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="510,159" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;Edit Success&quot;]" />
                                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Delete'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eca135bc-8f6c-4608-8353-d8ff506db9da" Version="V3">
                                           <uix:NClick.Target>
                                             <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products" CvTextArea="1356, 358, 48, 15" CvTextArgument="Delete" CvType="Text" DesignTimeRectangle="1358, 355, 46, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Delete'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Delete' tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Delete' type='' tag='A' class='' check:innerText='Delete' /&gt;" Guid="790ba3ba-469a-47f9-837b-b1771b9ced20" InformativeScreenshot="62eec56cab52c1af280f9de7f0642da6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                               <uix:TargetAnchorable.Anchors>
-                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                                  <uix:Target CvTextArea="327, 358, 25, 15" CvTextArgument="[CurrentRow.Item(1).ToString]" CvType="Text" DesignTimeRectangle="320, 346, 282, 41" ElementType="Text" FriendlyName="'asd'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='                 asd             ' check:innerText='asd' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAR4AAAAtCAYAAAB4UARhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGeSURBVHhe7dw/SgNBGIdhr2Jh4bGChSdJsUcJ7FEi3sDCQiE5xJjsH52JEVyEn8U+D3zFZLPty8wEclMAwj7Dc3t3b4wxkbHjAeKEB4gTHiBOeIA44QHihAeIEx4gTniAOOEB4oQHiBMeIE54gDjhAeKEB4j73/C892Vz91h279MaWAXhAeKEB4gTHiBuYXiey7b5C8OuPE1PRseye6ift1E59I/ts73wwBotCs+h75pIPHWngDz05VCvu+dp1X5/jE4dqjliwgNr87ej1r6rYjLudjb9cVi1xshs99Ny5qgFq7Q4PO1x6TzVLmYI0cVnZ0NgLo9lJ8IDq7QgPNPRqDpatTueL19xmp4JD1D5fXiuReaH8Iyq49UQmCtHreF94YG1+X14vu1O5svhOTzHsuuq3dDFvc5w8dxEan5feGBtFt3xtPc7p4g0O57Ln9K/73DG+Mxzes9RC1Zp8eUywF8JDxAnPECc8ABxwgPECQ8QJzxAnPAAccIDxAkPECc8QJzwAHHCA8QJDxD3GZ6X1zdjjImMHQ8QJzxAWCkfHrFs8st3T/UAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, TextNative, CV" />
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target CvTextArea="327, 358, 25, 15" CvTextArgument="[CurrentRow.Item(1).ToString + &quot; Edited&quot;]" CvType="Text" DesignTimeRectangle="320, 346, 282, 41" ElementType="Text" FriendlyName="'asd'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='                 asd             ' check:innerText='asd' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAR4AAAAtCAYAAAB4UARhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGeSURBVHhe7dw/SgNBGIdhr2Jh4bGChSdJsUcJ7FEi3sDCQiE5xJjsH52JEVyEn8U+D3zFZLPty8wEclMAwj7Dc3t3b4wxkbHjAeKEB4gTHiBOeIA44QHihAeIEx4gTniAOOEB4oQHiBMeIE54gDjhAeKEB4j73/C892Vz91h279MaWAXhAeKEB4gTHiBuYXiey7b5C8OuPE1PRseye6ift1E59I/ts73wwBotCs+h75pIPHWngDz05VCvu+dp1X5/jE4dqjliwgNr87ej1r6rYjLudjb9cVi1xshs99Ny5qgFq7Q4PO1x6TzVLmYI0cVnZ0NgLo9lJ8IDq7QgPNPRqDpatTueL19xmp4JD1D5fXiuReaH8Iyq49UQmCtHreF94YG1+X14vu1O5svhOTzHsuuq3dDFvc5w8dxEan5feGBtFt3xtPc7p4g0O57Ln9K/73DG+Mxzes9RC1Zp8eUywF8JDxAnPECc8ABxwgPECQ8QJzxAnPAAccIDxAkPECc8QJzwAHHCA8QJDxD3GZ6X1zdjjImMHQ8QJzxAWCkfHrFs8st3T/UAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, TextNative, CV" />
                                                 </scg:List>
                                               </uix:TargetAnchorable.Anchors>
                                             </uix:TargetAnchorable>
@@ -291,7 +291,7 @@
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Products&quot;).Cell(&quot;E2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[&quot;Success&quot;]" />
+                                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Products&quot;).Cell(&quot;E&quot;+i.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[&quot;Success&quot;]" />
                                             </Sequence>
                                           </If.Then>
                                           <If.Else>
@@ -301,7 +301,7 @@
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Products&quot;).Cell(&quot;E2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[&quot;Delete Error&quot;]" />
+                                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Products&quot;).Cell(&quot;E&quot;+i.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[&quot;Delete Error&quot;]" />
                                             </Sequence>
                                           </If.Else>
                                         </If>
@@ -314,7 +314,7 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Products&quot;).Cell(&quot;E2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;Edit Error&quot;]" />
+                                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Products&quot;).Cell(&quot;E&quot;+i.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;Edit Error&quot;]" />
                                       </Sequence>
                                     </If.Else>
                                   </If>
@@ -327,7 +327,7 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Products&quot;).Cell(&quot;E2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[&quot;Create Error&quot;]" />
+                                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Products&quot;).Cell(&quot;E&quot;+i.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[&quot;Create Error&quot;]" />
                                 </Sequence>
                               </If.Else>
                             </If>
@@ -338,6 +338,14 @@
                         <uix:TargetApp Area="1912, -8, 1936, 1096" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK7SURBVDhPdZLda9NQGMbjnyayO+8E8cIbwRsvnOxiMNiF4pggiDKYlyIqgnPuA8uq+17dh9uStV3XNu3aLv1ImzUfbdMmaZImfTw5ZXOCCzxwOOc8v/PkfV8GwI0LJRKJm5Zl4X8yDAOyLIPn+fdXPYymaZeXgvV1n+d5cBwHmUwG5XL5EsJ0Oh3MxRRMbVXxYUeglx3HhSRr/0iUZKpoLIZkMgmSlkIoYGqzitGFM0yt5q8F1OoqBQjlKprNFkRRBMdxtyjgzaaIkfkCnocyFBDE7RgmTMuG2bXJ2qJqkz29Y8KyXXq2trY2RAGvN0Q8mcvj2XeeAoIEwYtKQ4dKVDtXUT1X/YqkolRVoBu2b9mev7yyMgC82qhgZCGPyaVBAvsCoLWoRGIMzOVaAFADAEzbQ/hHeAB4uV7Go9lTjC+m0O/30bUd+mpgltXWFbOCoqig2bZhWD2EQqEhpt1u48VqCQ9nMhhbSML3CaDroEpMiWQafCaLNJ/BVuQXuKMoItu/SSElVGoKpt9O32F0AphYKeLBFx6j8yfwfB8WAQSvpvgscrk8JElCs6WT6g/UIF1QFA0sywmMrrfx9OcZ7n9OYeTbMVzPJ/FsGjmVPkWlIpLBEVEqiSiWKhCKf7V/wApMU9cxHs7j3qcTDH+Nw3F9dEyb/q9ATEFBu7RtDgzTIa20qfSODT5bEJgGiTa2lMfdjwk8nokTg0cSuKSFBsRaHT2vT4w2LWhdaZLiavSsbfaQzRUJgPR5NJTD7XdxDM/GyZB4tEVG18O5rMLt+XR4ArNUbxCoSiaT1KLtIp0VBCYYlLRk4LCkI14KLsioVOsoi3UUydgGgC5N1SP9d6lR0x2qJE8Ax4nkBHcUm2S5gQ4DsdHJA6K19c1llosWDg6PCnv7XGFnjy1s73K5yC6bi+ywufnFcOQP0NGNf8YUGpIAAAAASUVORK5CYII=" InformativeScreenshot="79b113b38aa4c02a1bd58542faec14fa.jpg" Selector="&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;" Title="Index - EcoPower_Logistics" Url="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products" />
                       </uix:NApplicationCard.TargetApp>
                     </uix:NApplicationCard>
+                    <Assign sap:VirtualizedContainerService.HintSize="758,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[i+1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
                   </Sequence>
                 </ActivityAction>
               </ui:ForEachRow.Body>
